@@ -1,0 +1,28 @@
+streamlit-webrtc
+# pyaudio  # Commented out for Streamlit Cloud deployment (requires portaudio.h)
+translate
+python-dotenv
+# For segmentation (if using torch-based models)
+torch
+torchvision
+# For weather API (already have requests, but add openweathermap if needed)
+# openweathermap (if using their SDK)
+# For i18n (optional, for structured translation)
+# streamlit-i18n (removed, not available on PyPI)
+# For file storage (optional, for audio/image uploads)
+boto3
+# Added dependencies for Vosk and HuggingFace transformers
+vosk
+transformers
+torchaudio
+# sentencepiece  # Commented out for Streamlit Cloud deployment (requires cmake/pkg-config)
+scikit-learn
+openmeteo-requests
+requests-cache
+retry_requests
+folium
+streamlit-folium
+matplotlib
+google-generativeai
+werkzeug
+streamlit-geolocation
