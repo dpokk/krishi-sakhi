@@ -1,0 +1,8 @@
+timestamp,user_id,login_name,page,category,data
+2025-07-19T12:38:14.980698,sistl,sss,recommendations,form,"{""farm_id"": ""1"", ""N"": 10.0, ""P"": 10.0, ""K"": 10.0, ""soil_ph"": 6.5, ""soil_moisture"": 50.0, ""temperature_c"": 25.0, ""rainfall_mm"": 100.0, ""crop_type"": ""Wheat"", ""fertilizer_usage_kg"": 100.0, ""pesticide_usage_kg"": 10.0, ""crop_yield_ton"": 5.0, ""sustainability_score"": 50.0, ""crop"": ""Wheat""}"
+2025-07-19T12:38:56.935118,sistl,sss,diagnosis,image,"{""filename"": ""test_Apple rust leaf_4.jpg""}"
+2025-07-19T12:39:02.572262,sistl,sss,diagnosis,image,"{""filename"": ""test_Apple rust leaf_4.jpg""}"
+2025-07-19T12:39:06.850719,sistl,sss,diagnosis,image,"{""filename"": ""test_Apple rust leaf_4.jpg""}"
+2025-07-19T12:40:44.191227,sistl,sss,growth_diary,entry,"{""date"": ""2025-07-19"", ""crop"": ""wheat"", ""notes"": ""fbdzfndnfdxng xd"", ""image_path"": ""C:\\Users\\sistl\\Desktop\\KrishiSakhi\\dataset_farming\\diary_2025-07-19_wheat_u.jpeg"", ""weather"": ""30""}"
+2025-07-19T12:42:41.052126,sistl,sss,knowledge_sharing,thread,"{""thread_id"": 1752928961, ""title"": ""asada"", ""content"": ""dgszhdhsr"", ""timestamp"": ""2025-07-19T18:12:41.048162"", ""replies"": """"}"
+2025-07-19T12:43:43.544440,sistl,sss,soil_health,soil_test,"{""date"": ""2025-07-19"", ""pH"": 6.5, ""N"": 0.0, ""P"": 0.0, ""K"": 0.0, ""organic_matter"": 0.0, ""notes"": """"}"
