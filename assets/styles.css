@@ -1,0 +1,587 @@
+﻿/* Enhanced UI styles for Krishi Sakhi with Agricultural Background */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global styles with agricultural background */
+.stApp {
+    background: linear-gradient(
+        135deg, 
+        rgba(245, 247, 250, 0.95) 0%, 
+        rgba(195, 207, 226, 0.95) 100%
+    ),
+    url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Backdrop blur overlay for readability */
+.stApp::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+.main {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+/* Custom header styles with agricultural theme */
+.main-header {
+    background: linear-gradient(
+        135deg, 
+        rgba(46, 139, 87, 0.95) 0%, 
+        rgba(34, 139, 34, 0.95) 100%
+    ),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 139, 87, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.main-header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.title-container {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+
+.subtitle-container {
+    color: #e8f5e8;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Welcome card styles with semi-transparent background */
+.welcome-card {
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.98) 0%, 
+        rgba(248, 249, 250, 0.98) 100%
+    );
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 3rem;
+    margin: 2rem 0;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border: 1px solid rgba(46, 139, 87, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #2E8B57, #4A90E2, #228B22, #2E8B57);
+    border-radius: 25px 25px 0 0;
+}
+
+.welcome-title {
+    color: #1a5f3f !important;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+}
+
+.welcome-description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #1a202c !important;
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* Feature list styles with agricultural elements */
+.feature-list {
+    background: linear-gradient(
+        135deg, 
+        rgba(248, 249, 250, 0.98) 0%, 
+        rgba(233, 236, 239, 0.98) 100%
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    border: 1px solid rgba(46, 139, 87, 0.1);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    padding: 1rem 1.2rem;
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.98) 0%, 
+        rgba(248, 249, 250, 0.98) 100%
+    ) !important;
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #2E8B57;
+    color: #1a202c !important;
+    font-weight: 500;
+}
+
+.feature-item:hover {
+    transform: translateX(8px) translateY(-2px);
+    box-shadow: 0 8px 25px rgba(46, 139, 87, 0.2);
+}
+
+.feature-icon {
+    color: #1a5f3f !important;
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* Feature text styling */
+.feature-item {
+    color: #1a202c !important;
+    font-weight: 500;
+}
+
+.feature-item div {
+    color: #1a202c !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* Enhanced button styles */
+.stButton > button {
+    background: linear-gradient(135deg, #2E8B57 0%, #228B22 100%);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(46, 139, 87, 0.5);
+}
+
+.stButton > button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.stButton > button:hover::before {
+    left: 100%;
+}
+
+/* Map container styles with agricultural border */
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    margin: 1.5rem 0;
+    border: 3px solid rgba(46, 139, 87, 0.3);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Enhanced metric cards with agricultural theme */
+.metric-card {
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.95) 0%, 
+        rgba(248, 249, 250, 0.95) 100%
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    border-left: 6px solid #2E8B57;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="50" fill="%232E8B57" opacity="0.1">🌱</text></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(46, 139, 87, 0.2);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2E8B57;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.metric-label {
+    font-size: 1rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+/* Enhanced nutrient level indicators */
+.nutrient-low {
+    color: #dc3545;
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.15), rgba(220, 53, 69, 0.1));
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid rgba(220, 53, 69, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.nutrient-medium {
+    color: #fd7e14;
+    background: linear-gradient(135deg, rgba(253, 126, 20, 0.15), rgba(253, 126, 20, 0.1));
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid rgba(253, 126, 20, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.nutrient-high {
+    color: #198754;
+    background: linear-gradient(135deg, rgba(25, 135, 84, 0.15), rgba(25, 135, 84, 0.1));
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid rgba(25, 135, 84, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Enhanced progress bars */
+.progress-container {
+    background-color: rgba(233, 236, 239, 0.8);
+    border-radius: 15px;
+    height: 12px;
+    margin: 0.8rem 0;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 15px;
+    transition: width 1s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.progress-low { 
+    background: linear-gradient(90deg, #dc3545, #e74c3c, #dc3545); 
+}
+.progress-medium { 
+    background: linear-gradient(90deg, #fd7e14, #f39c12, #fd7e14); 
+}
+.progress-high { 
+    background: linear-gradient(90deg, #198754, #27ae60, #198754); 
+}
+
+/* Enhanced footer with agricultural theme */
+.footer {
+    background: linear-gradient(
+        135deg, 
+        rgba(44, 62, 80, 0.95) 0%, 
+        rgba(52, 73, 94, 0.95) 100%
+    ),
+    url('https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.footer > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Step indicators with agricultural theme */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.95) 0%, 
+        rgba(248, 249, 250, 0.95) 100%
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-left: 5px solid #2E8B57;
+    transition: all 0.3s ease;
+}
+
+.step-indicator:hover {
+    transform: translateX(5px);
+    box-shadow: 0 12px 25px rgba(46, 139, 87, 0.15);
+}
+
+.step-number {
+    background: linear-gradient(135deg, #2E8B57 0%, #228B22 100%);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 1.5rem;
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+}
+
+.step-text {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Enhanced loading animation */
+.loading-container {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.9) 0%, 
+        rgba(248, 249, 250, 0.9) 100%
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+.loading-spinner {
+    border: 5px solid rgba(46, 139, 87, 0.2);
+    border-top: 5px solid #2E8B57;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.2);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Sidebar enhancements */
+.css-1d391kg {
+    background: linear-gradient(
+        180deg, 
+        rgba(248, 249, 250, 0.95) 0%, 
+        rgba(233, 236, 239, 0.95) 100%
+    );
+    backdrop-filter: blur(10px);
+    border-right: 3px solid rgba(46, 139, 87, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .title-container {
+        font-size: 2.8rem;
+    }
+    
+    .subtitle-container {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-card, .feature-list {
+        padding: 2rem 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .metric-card {
+        padding: 1.5rem;
+    }
+    
+    .main-header {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .stApp {
+        background: linear-gradient(
+            135deg, 
+            rgba(26, 26, 26, 0.95) 0%, 
+            rgba(45, 55, 72, 0.95) 100%
+        ),
+        url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+    }
+    
+    .welcome-card, .metric-card, .feature-list, .step-indicator {
+        background: linear-gradient(135deg, rgba(45, 55, 72, 0.9), rgba(74, 85, 104, 0.9));
+        color: #e2e8f0;
+    }
+}
+
+/* Global text overrides for visibility */
+.stMarkdown, .stMarkdown p, .stMarkdown div {
+    color: #1a202c !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4 {
+    color: #1a5f3f !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+}
+
+/* Make sure all text in cards is visible */
+.welcome-card *, .feature-list *, .feature-item * {
+    color: #1a202c !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(248, 249, 250, 0.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #2E8B57, #228B22);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #228B22, #1e7d1e);
+}
