@@ -1,0 +1,43 @@
+[theme]
+# Primary colors for Krishi Sakhi theme
+primaryColor = "#2E8B57"  # Forest Green - represents agriculture
+backgroundColor = "#FFFFFF"  # White background for clarity
+secondaryBackgroundColor = "#F0F8F5"  # Light green tint
+textColor = "#1E1E1E"  # Dark gray for readability
+
+# Font settings
+font = "sans serif"  # Clean, readable font
+
+[server]
+# Server configuration
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+
+# Port settings (can be overridden at runtime)
+port = 8501
+
+[browser]
+# Browser settings
+gatherUsageStats = false  # Privacy setting
+showErrorDetails = true  # Show detailed errors during development
+
+[logger]
+# Logging configuration
+level = "info"
+
+[client]
+# Client-side configuration
+caching = true
+showErrorDetails = true
+
+# Custom configuration for the app
+[mapbox]
+# If using Mapbox (currently using OpenStreetMap)
+# token = "your-mapbox-token-here"
+
+[runner]
+# Runner configuration
+magicEnabled = true
+installTracer = true
+fixMatplotlib = true
