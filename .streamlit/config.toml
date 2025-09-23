@@ -1,9 +1,10 @@
 [theme]
-# Primary colors for Krishi Sakhi theme
+# Primary colors for Krishi Sakhi theme - optimized for light theme
 primaryColor = "#2E8B57"  # Forest Green - represents agriculture
 backgroundColor = "#FFFFFF"  # White background for clarity
-secondaryBackgroundColor = "#F0F8F5"  # Light green tint
-textColor = "#1E1E1E"  # Dark gray for readability
+secondaryBackgroundColor = "#F8FFF8"  # Very light green tint
+textColor = "#000000"  # Black text for maximum contrast
+base = "light"  # Force light theme
 
 # Font settings
 font = "sans serif"  # Clean, readable font
